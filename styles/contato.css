@@ -1,0 +1,60 @@
+/* Tive que começar a usar as propriedades dos itens sem as variáveis pois em alguns momentos ela não responde na folha de estilo da forma desejada, buscar entender o porquê não estão respondendo e como consertar! */
+.contato {
+    background: #FFF;
+    padding: 1em;
+}
+.contato--titulo {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contato--texto {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    background: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1em 0;
+}
+.caixa--email {
+    padding: 1em;
+    color: #002F52;
+    border-radius: 24px;
+    width: 90%;
+    border: 1px solid #002F52; 
+}
+
+.caixa--email::placeholder {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: #002F52;
+    background: url(../icons/mail_black_24dp\ 1.svg) no-repeat;
+    background-position: left center; 
+    padding-left: 2em;
+}
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato--descrição {
+        margin-right: 1em;
+        width: 30%;
+    }
+    .caixa--email {
+        width: 30%;
+        padding: 0.5em;
+    }
+    .contato--titulo{
+        font-size: 24px;
+        width: 60%;
+    }
+}

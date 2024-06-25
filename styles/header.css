@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.cabeçalho--menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(../icons/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.cabeçalho {
+    background-color: var(--branco-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container--cabeçalho {
+    display: flex;
+    align-items: center;
+}
+.container--icons {
+    padding: 1em;
+}
+.container--botao{
+    opacity: 0;
+    position: absolute;
+}
+.lista--menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container--botao:checked ~ .lista--menu {
+    display: block;
+}
+.lista--menu-titulo,.lista--menu-item {
+    padding: 1em;
+    background-color: var(--branco-principal);
+}
+.lista--menu-titulo {
+    color: var(--laranja-principal);
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-L);
+    font-weight: var(--peso-bold);
+}
+.lista--menu-item {
+    color: var(--azul-degrade);
+}
+
+.lista--menu-link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-L);
+    font-weight: var(--peso-regular);
+}
+.container--titulo{
+    display: none;
+}
+.opções {
+    display: none;
+}
+.container--link {
+    display: none;
+}
+.container--texto {
+    display: none;
+}
+/* 
+O @media serve para dizer ao CSS que estamos criando um media query e quer dizer que vamos nos comunicar com o CSS perguntando alguma coisa. O screen significa tela, então estamos trabalhando com a tela que acessa a página. O and é para agregar a tela ao (min-width: 1024px), ou seja, a tela tem tamanho mínimo de 1024px;
+*/
+@media screen and (min-width: 1024px){
+    .container--titulo, .container--titulo--negrito {
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+}
+.container--titulo{
+    font-weight: 400;
+    display: block;
+}
+.container--titulo--negrito{
+    font-weight: 700;
+}
+.opções {
+    display: flex;
+}
+.opções--item{
+    padding: 0 1em;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.opções--link {
+    text-decoration: none;
+    color: var(--preto-pricipal);
+}
+.container--icons-none {
+    display: none;
+}
+.cabeçalho--menu-hamburguer {
+    display: none;
+}
+.opções--botão:checked ~ .lista--menu {
+    display: block;
+    width: auto;
+}
+.opções--botão {
+  display: none;
+}
+}
+@media screen and (min-width: 1728px){
+    .container--link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto-principal);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .cabeçalho {
+        padding: 0 0.7em;
+    }
+    .opções {
+        margin-right: auto;
+    }
+    .container--texto {
+        display: block;
+    }
+}

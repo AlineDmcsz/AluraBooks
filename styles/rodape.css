@@ -1,0 +1,48 @@
+.rodape { 
+    background-color: #F9F9F9; padding: 1em;   
+}
+.rodape--titulo { 
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+}
+hr { margin: 0; }
+
+.lista--rodape {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+ }
+ .lista--rodape{
+    display: block;
+ }
+ .lista--rodape-item{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+ }
+ .lista--rodape-titulo {
+    color: #858585;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+ }
+ .lista--rodape-link{
+    color: #474646;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 0.5em;
+ }
+ .rodape--titulo {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+ }
+}

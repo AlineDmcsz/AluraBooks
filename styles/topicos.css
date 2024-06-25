@@ -1,0 +1,42 @@
+
+/* Tive que começar a usar as propriedades dos itens sem as variáveis pois em alguns momentos ela não responde na folha de estilo da forma desejada, buscar entender o porquê não estão respondendo e como consertar! */
+.topicos{
+background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+text-align: center;
+padding: 1em 0;
+}
+.topicos--titulo {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1em
+}
+.topicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topico--itens {
+    margin: 2em 0.5em;
+}
+.topicos--link {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    list-style-type: none;
+    background-color: var(--laranja-principal);
+    padding: 2em;
+}
+@media screen and (min-width: 1024px) {
+    .topicos--titulo{
+        font-size: 24px;
+    }
+    .topicos--link{
+        font-size: 24px;
+        padding: 1em;
+    }
+}
